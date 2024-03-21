@@ -30,9 +30,8 @@ app.all(
 
 // Serve the GraphiQL IDE.
 app.get("/", (_req, res) => {
-  res.send("Hello World");
-  //res.type("html");
-  //res.end(ruruHTML({ endpoint: "/graphql" }));
+  res.type("html");
+  res.end(ruruHTML({ endpoint: "/graphql" }));
 });
 
 // Start the server at port
